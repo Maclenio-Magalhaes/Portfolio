@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Projetos - M'M</title>
+  <meta name="description" content="Projetos de Maclénio Magalhães: landing pages, aplicações web e painéis administrativos.">
+  <meta name="theme-color" content="#0A0F1E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230A0F1E'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%238A9BFF'%3EM%3C/text%3E%3C/svg%3E">
+
+  <!-- Tipografia: Geist (com alternativas de sistema no CSS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;display=swap">
+
+  <!-- Estilos e script partilhados por todas as páginas (o script no <head> aplica o tema sem "flash") -->
+  <link rel="stylesheet" href="../style.css">
+  <script src="../main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- Barra superior: marca e botão de tema -->
+  <header class="topbar container">
+    <a class="brand" href="../index.html#Inicio">
+      <span class="brand__mark">M'M</span>
+      <span class="brand__name">Dev. Web</span>
+    </a>
+    <button class="icon-btn theme-toggle" type="button" data-tema-alternar hidden>
+      <span class="icon icon--sun" aria-hidden="true"></span>
+      <span class="icon icon--moon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- Cabeçalho da página e filtro -->
+    <section class="page-head container" aria-labelledby="projetos-titulo">
+      <h1 class="page-title" id="projetos-titulo">Alguns dos meus sites</h1>
+
+      <div class="filters">
+        <!-- Filtro por categoria (aparece quando o JavaScript está ativo) -->
+        <div class="segmented" role="group" aria-label="Filtrar projetos" data-filtros hidden>
+          <button class="segmented__btn" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="segmented__btn" type="button" data-filtro="informativo" aria-pressed="false">Sites informativos</button>
+          <button class="segmented__btn" type="button" data-filtro="aplicacao" aria-pressed="false">Aplicações web</button>
+        </div>
+        <p class="filters__count" data-contador aria-live="polite">6 projetos</p>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projetos container" id="Projetos" aria-label="Lista de projetos">
+      <div class="cards" data-projetos>
+
+        <article class="card" data-categoria="informativo" data-revelar>
+          <div class="card__media">
+            <img src="../img/ippls.jpeg" alt="Website do IPPLS." width="800" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Lading Page</p>
+            <h2 class="card__title">IPPLS</h2>
+            <p class="card__text">Lading Page simples e Informativa para um Instituto.</p>
+            <div class="card__foot">
+            <a class="card__link" href="https://ippls-ao.onrender.com/" target="_blank" rel="noopener noreferrer">Ver site<span class="icon icon--external" aria-hidden="true"></span><span class="sr-only"> de IPPLS (abre num novo separador)</span></a>
+            <span class="card__host">ippls-ao.onrender.com</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="aplicacao" data-revelar>
+          <div class="card__media">
+            <img src="../img/kambio.jpeg" alt="Site Kambio" width="800" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Conversor de Moedas</p>
+            <h2 class="card__title">Kambio</h2>
+            <p class="card__text">WebSite de conversão de moedas com taxas atualizadas em tempo real, de forma rápida e simples.</p>
+            <div class="card__foot">
+            <a class="card__link" href="https://kambio-ao.vercel.app/" target="_blank" rel="noopener noreferrer">Ver site<span class="icon icon--external" aria-hidden="true"></span><span class="sr-only"> de Kambio (abre num novo separador)</span></a>
+            <span class="card__host">kambio-ao.vercel.app</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="aplicacao" data-revelar>
+          <div class="card__media">
+            <img src="../img/lifeos.jpeg" alt="Life OS" width="800" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__tag">To-do List</p>
+            <h2 class="card__title">Life OS</h2>
+            <p class="card__text">WebSite para lista de tarefas com funções extras e diferenciadas.</p>
+            <div class="card__foot">
+            <a class="card__link" href="https://life-os-eight-plum-87.vercel.app/" target="_blank" rel="noopener noreferrer">Ver site<span class="icon icon--external" aria-hidden="true"></span><span class="sr-only"> de Life OS (abre num novo separador)</span></a>
+            <span class="card__host">life-os-eight-plum-87.vercel.app</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="informativo" data-revelar>
+          <div class="card__media">
+            <img src="../img/mimos.jpeg" alt="Site Mimos de uma Garota" width="800" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Lading Page</p>
+            <h2 class="card__title">Mimos de uma Garota</h2>
+            <p class="card__text">Página informativa para uma empresa, incluindo formulário de contacto, redes socias e localização.</p>
+            <div class="card__foot">
+            <!-- Acrescentar o link do site: trocar este <span> por
+                 <a class="card__link" href="URL" target="_blank" rel="noopener noreferrer">Ver site</a> -->
+            <span class="card__link card__link--off">Link em breve</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="informativo" data-revelar>
+          <div class="card__media">
+            <img src="../img/ogfragancia.jpeg" alt="Site OG Fragancia" width="800" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Lading Page</p>
+            <h2 class="card__title">OG Fragancia</h2>
+            <p class="card__text">Página informativa para uma empresa, incluindo formulário de contacto, redes socias e localização.</p>
+            <div class="card__foot">
+            <a class="card__link" href="https://og-fragancia.vercel.app" target="_blank" rel="noopener noreferrer">Ver site<span class="icon icon--external" aria-hidden="true"></span><span class="sr-only"> de OG Fragancia (abre num novo separador)</span></a>
+            <span class="card__host">og-fragancia.vercel.app</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="aplicacao" data-revelar>
+          <div class="card__media">
+            <img src="../img/ndembas.jpeg" alt="Site Ndembas" width="800" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="card__body">
+            <p class="card__tag">Painel 2 in 1</p>
+            <h2 class="card__title">Ndembas</h2>
+            <p class="card__text">WEBSITE 2 em 1, com base de dados integrada, painel administrativo, cardápio, reserva, disponibilidade, sistema de gerência, localização, pratos mais pedidos e muito mais.</p>
+            <div class="card__foot">
+            <a class="card__link" href="https://churrascaria-ndembas.vercel.app" target="_blank" rel="noopener noreferrer">Ver site<span class="icon icon--external" aria-hidden="true"></span><span class="sr-only"> de Ndembas (abre num novo separador)</span></a>
+            <span class="card__host">churrascaria-ndembas.vercel.app</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Marca -->
+        <div class="footer__brand">
+          <a class="brand" href="../index.html#Inicio">
+            <span class="brand__mark">M'M</span>
+            <span class="brand__name">Dev. Web</span>
+          </a>
+          <p class="footer__tagline">Maclénio Magalhães | Dev. Júnior</p>
+        </div>
+
+        <!-- Navegação -->
+        <nav class="footer__col" aria-label="Navegação do rodapé">
+          <h2 class="footer__title">Navegação</h2>
+          <ul class="footer__list">
+            <li><a href="../index.html#Inicio">Início</a></li>
+            <li><a href="../index.html#Sobre">Sobre mim</a></li>
+            <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contactos -->
+        <div class="footer__col">
+          <h2 class="footer__title">Contactos</h2>
+          <ul class="footer__list">
+            <li><a href="tel:+244958283819"><span class="icon icon--phone" aria-hidden="true"></span>958 283 819</a></li>
+            <li><a href="https://www.instagram.com/magalhaes_maclenio7/" target="_blank" rel="noopener noreferrer"><span class="icon icon--instagram" aria-hidden="true"></span>@magalhaes_maclenio7</a></li>
+            <li><span class="footer__item"><span class="icon icon--pin" aria-hidden="true"></span>Angola, Icolo &amp; Bengo</span></li>
+          </ul>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="footer__col">
+          <h2 class="footer__title">Redes sociais</h2>
+          <ul class="social">
+            <li><a class="icon-btn" href="https://www.instagram.com/magalhaes_maclenio7/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre num novo separador)"><span class="icon icon--instagram" aria-hidden="true"></span></a></li>
+            <li><a class="icon-btn" href="https://wa.me/244958283819" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (abre num novo separador)"><span class="icon icon--whatsapp" aria-hidden="true"></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Direitos de autor -->
+      <div class="footer__bottom">
+        <p class="footer__copy">© <span data-ano>2026</span> Todos os direitos reservados</p>
+        <p>Desenvolvido por <strong>Maclénio Magalhães</strong></p>
+        <a class="footer__top" href="../index.html#Inicio"><span class="icon icon--home" aria-hidden="true"></span>Voltar ao site principal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Navegação inferior fixa -->
+  <nav class="dock" aria-label="Navegação principal">
+    <div class="dock__track">
+      <a class="dock__item" href="../index.html#Inicio"><span class="icon icon--home" aria-hidden="true"></span><span>Início</span></a>
+      <a class="dock__item" href="../index.html#Sobre"><span class="icon icon--user" aria-hidden="true"></span><span>Sobre mim</span></a>
+      <a class="dock__item" href="projetos.html" aria-current="page"><span class="icon icon--grid" aria-hidden="true"></span><span>Projetos</span></a>
+      <a class="dock__item" href="contactos.html"><span class="icon icon--mail" aria-hidden="true"></span><span>Contactos</span></a>
+    </div>
+  </nav>
+
+</body>
+</html>
